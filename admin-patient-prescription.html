@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from pixner.net/Speech Care-dashboard/Speech Care-dashboard/admin-patient-case-studies.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Dec 2023 10:16:30 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <title>Admin Patient Case Studies | Speech Care </title>
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="assets/css/customizeBootstrap.css">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="body-bg">
+
+    <!-- main body  -->
+
+    <!-- preloader  -->
+    <div id='preloader'>
+        <svg id='loader-1'  height='210' width='550' xmlns='http://www.w3.org/2000/svg'
+                xmlns:xlink='http://www.w3.org/1999/xlink'>
+            <path id='loader-2' stroke='#00d0f1' fill='none' stroke-width='2' stroke-linejoin='round'
+                d='M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210' />
+        </svg>
+    </div>
+
+    <!-- sidebar start -->
+    <div class="sidebar">
+        <div class="sidebar-wrapper">
+            <div>
+                <i class="fa-solid fa-x hide-menubar" id="hide-menubar"></i>
+                <div class="p-xl-20 p-10 ">
+                    <div class="logo pb-20">
+                        <a class="d-flex align-items-center" href="index.html">
+                            
+                            <img class="ms-10 show-item lp-2" src="assets/img/logo-body.png" alt="logo" width="160">
+                        </a>
+                    </div>
+                    <div class="py-20 bb-2 bt-1">
+                        <a class="sidebar-user" href="javascript:void(0)">
+                            <img class="rounded-circle" src="assets/img/admin.png" alt="admin">
+                            <span class="para-1b show-item ms-10">Super Admin</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="side-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-gauge-high"></i>
+                                <span class="show-item">Dashboard</span>
+                            </a>
+                        </li>
+                        <li >
+                            <a href="doctor-calendar.html">
+                                <i class="fa-solid fa-laptop-medical"></i>
+                                <span class="show-item">Agenda</span>
+                            </a>
+                        </li>
+                        <li >
+                            <a href="consultas.html">
+                                <i class="fa-solid fa-user-doctor"></i>
+                                <span class="show-item"> Consultas</span>
+                            </a>
+                        </li>
+                        <li >
+                            <a href="teurapeutas.html">
+                                <i class="fa-solid fa-bed-pulse"></i>
+                                <span class="show-item"> Terapeutas </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pacientes.html">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span class="show-item"> Pacientes </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admin-patient-appointment.html">
+                                <i class="fa-regular fa-calendar-check"></i>
+                                <span class="show-item"> Recebimentos</span>
+                            </a>
+                        </li>
+                        <li >
+                            <a href="admin-patient-case-studies.html">
+                                <i class="fa-solid fa-paste"></i>
+                                <span class="show-item"> Pagamentos </span>
+                            </a>
+                        </li>
+                        <li >
+                            <a href="admin-patient-prescription.html">
+                                <i class="fa-solid fa-file-prescription"></i>
+                                <span class="show-item">Gestão</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html">
+                                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                                <span class="show-item">Sair</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="log-out">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span class="show-item"> Log Out </span>
+            </button>
+        </div>
+    </div>
+    <!-- sidebar end  -->
+
+    <!-- main content & top header start  -->
+    <main class="content-wrapper">
+
+        <!-- header section start  -->
+        <header>
+            <div class="d-flex align-items-center gap-xl-30 gap-3">
+
+                <button class="toggle-menu btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+
+                
+            </div>
+
+            <div class="d-flex align-items-center gap-sm-4 gap-3">
+
+                <a href="chat-with-us.html">
+                    <i class="fa-regular fa-comments me-2"></i>
+                    <span class="fs-base header-item-hide">Chat with us</span>
+                </a>
+
+                <div class="health-ease">
+                    <i class="fa-regular fa-hospital me-xl-10 he-icon"></i>
+                    <select>
+                        <option value="0">Speech Care</option>
+                        <option value="1">item 1</option>
+                        <option value="2">item 2</option>
+                        <option value="3">item 3</option>
+                    </select>
+                </div>
+
+
+                <div class="account">
+                    <img class="me-xl-10" src="assets/img/patient.png" alt="patient">
+                    <select>
+                        <option value="0">Mr Patient</option>
+                        <option value="1">item 1</option>
+                        <option value="2">item 2</option>
+                        <option value="3">item 3</option>
+                    </select>
+                </div>
+
+                <div class="language ">
+                    <img class="lang-flag header-item-hide" src="assets/img/flag.png" alt="flag">
+
+                    <select class="lang">
+                        <option value="en">EN</option>
+                        <option value="bd">BD</option>
+                        <option value="in">IN</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <!-- header section end  -->
+
+        <!-- content section start   -->
+        <div class="main-content">
+            <!-- main content start -->
+            <div>
+                <div class="page-title">
+                   
+                    <ul class="d-flex align-items-center gap-20">
+                        <li class="bc-item"><a class="para-1b" href="index.html">Dashboard</a></li>
+                        <li class="bc-item">Gestão</li>
+                    </ul>
+                </div>
+
+                <div class="list-body">
+                    <div class="list-title d-between bgnc-10 br-trl-sm px-30 py-3">
+                        <span class="heading-five">Gestão</span>
+                        <div class="d-between gap-30">
+                            <button class="btn-1 para-1b"> <i class="fa-solid fa-cloud-arrow-down"></i> Export</button>
+                            <button class="btn-1 para-1b" id="showFilter"> <i class="fa-solid fa-sliders"></i>
+                                Filter</button>
+                        </div>
+                    </div>
+                    <!-- pop up filter box start -->
+                    <div class="filter-list bgnc-10 ">
+                        <div class="px-30 pt-3 pb-30">
+                            <form action="#" class="d-between gap-30 mb-30">
+                                <div class="w-100">
+                                    <label class="para-1b d-block tnc-1 mb-10">Name</label>
+                                    <input class="form-control px-xxl-30 py-xxl-20 p-lg-20 p-3" type="text"
+                                        placeholder="Your name">
+                                </div>
+                                <div class="w-100">
+                                    <label class="para-1b d-block tnc-1 mb-10">Email</label>
+                                    <input class="form-control px-xxl-30 py-xxl-20 p-lg-20 p-3" type="email"
+                                        placeholder="Your email">
+                                </div>
+                                <div class="w-100">
+                                    <label class="para-1b d-block tnc-1 mb-10">Phone</label>
+                                    <input class="form-control px-xxl-30 py-xxl-20 p-lg-20 p-3" type="number"
+                                        placeholder="Your number">
+                                </div>
+                            </form>
+                            <button class="btn-2">Submit</button>
+                        </div>
+                    </div>
+                    <!-- pop up filter box end -->
+                    <!-- table start -->
+                    <table class="list-table" id="itemTable">
+                        <thead>
+                            <tr>
+                                <th class="sort-devices"><img class="me-10" src="assets/img/up-down.png" alt="up-down">
+                                    Name
+                                </th>
+                                <th class="sort-devices"><img class="me-10" src="assets/img/up-down.png"
+                                        alt="up-down">Email
+                                </th>
+                                <th class="sort-devices"><img class="me-10" src="assets/img/up-down.png"
+                                        alt="up-down">Phone</th>
+                                <th class="sort-devices text-center"><img class="me-10" src="assets/img/up-down.png"
+                                        alt="up-down">Food Allergy
+                                </th>
+                                <th class="sort-devices text-center"><img class="me-10" src="assets/img/up-down.png"
+                                        alt="up-down">Heart Disease
+                                </th>
+                                <th class="sort-devices text-center"><img class="me-10" src="assets/img/up-down.png"
+                                        alt="up-down">Diabetic</th>
+                                <th><img class="me-10" src="assets/img/up-down.png" alt="up-down">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mr Sudhansu</td>
+                                <td><a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="33475a5e1d59565d5d5a5d544073564b525e435f561d505c5e">[email&#160;protected]</a></td>
+                                <td>(406) 555-0120</td>
+                                <td class="text-center">Yes</td>
+                                <td class="text-center">Yes</td>
+                                <td class="tsc-1 text-center">Yes</td>
+                                <td class="text-center">
+                                    <i class="act-icon tpc-2 fa-regular fa-eye"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mr Sudhansu</td>
+                                <td><a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4f3b262261252a21212621283c0f2a372e223f232a612c2022">[email&#160;protected]</a></td>
+                                <td>(406) 555-0121</td>
+                                <td class="text-center">No</td>
+                                <td class="text-center">No</td>
+                                <td class="tsc-1 text-center">No</td>
+                                <td class="text-center">
+                                    <i class="act-icon tpc-2 fa-regular fa-eye"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mr Sudhansu</td>
+                                <td><a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c180501420609020205020b1f2c09140d011c0009420f0301">[email&#160;protected]</a></td>
+                                <td>(406) 555-0122</td>
+                                <td class="text-center">No</td>
+                                <td class="text-center">No</td>
+                                <td class="tsc-1 text-center">Yes</td>
+                                <td class="text-center">
+                                    <i class="act-icon tpc-2 fa-regular fa-eye"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mr Sudhansu</td>
+                                <td><a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="acd8c5c182c6c9c2c2c5c2cbdfecc9d4cdc1dcc0c982cfc3c1">[email&#160;protected]</a></td>
+                                <td>(406) 555-0123</td>
+                                <td class="text-center">Yes</td>
+                                <td class="text-center">No</td>
+                                <td class="tsc-1 text-center">No</td>
+                                <td class="text-center">
+                                    <i class="act-icon tpc-2 fa-regular fa-eye"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mr Sudhansu</td>
+                                <td><a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2e5a474300444b40404740495d6e4b564f435e424b004d4143">[email&#160;protected]</a></td>
+                                <td>(406) 555-0124</td>
+                                <td class="text-center">No</td>
+                                <td class="text-center">No</td>
+                                <td class="tsc-1 text-center">No</td>
+                                <td class="text-center">
+                                    <i class="act-icon tpc-2 fa-regular fa-eye"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mr Sudhansu</td>
+                                <td><a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cfbba6a2e1a5aaa1a1a6a1a8bc8faab7aea2bfa3aae1aca0a2">[email&#160;protected]</a></td>
+                                <td>(406) 555-0125</td>
+                                <td class="text-center">No</td>
+                                <td class="text-center">Yes</td>
+                                <td class="tsc-1 text-center">No</td>
+                                <td class="text-center">
+                                    <i class="act-icon tpc-2 fa-regular fa-eye"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mr Sudhansu</td>
+                                <td><a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="eb9f8286c5818e858582858c98ab8e938a869b878ec5888486">[email&#160;protected]</a></td>
+                                <td>(406) 555-0126</td>
+                                <td class="text-center">Yes</td>
+                                <td class="text-center">Yes</td>
+                                <td class="tsc-1 text-center">Yes</td>
+                                <td class="text-center">
+                                    <i class="act-icon tpc-2 fa-regular fa-eye"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mr Sudhansu</td>
+                                <td><a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="26524f4b084c4348484f48415566435e474b564a430845494b">[email&#160;protected]</a></td>
+                                <td>(406) 555-0127</td>
+                                <td class="text-center">Yes</td>
+                                <td class="text-center">No</td>
+                                <td class="tsc-1 text-center">Yes</td>
+                                <td class="text-center">
+                                    <i class="act-icon tpc-2 fa-regular fa-eye"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mr Sudhansu</td>
+                                <td><a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2f5b464201454a41414641485c6f4a574e425f434a014c4042">[email&#160;protected]</a></td>
+                                <td>(406) 555-0128</td>
+                                <td class="text-center">No</td>
+                                <td class="text-center">No</td>
+                                <td class="tsc-1 text-center">No</td>
+                                <td class="text-center">
+                                    <i class="act-icon tpc-2 fa-regular fa-eye"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mr Sudhansu</td>
+                                <td><a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b7c3deda99ddd2d9d9ded9d0c4f7d2cfd6dac7dbd299d4d8da">[email&#160;protected]</a></td>
+                                <td>(406) 555-0129</td>
+                                <td class="text-center">No</td>
+                                <td class="text-center">No</td>
+                                <td class="tsc-1 text-center">Yes</td>
+                                <td class="text-center">
+                                    <i class="act-icon tpc-2 fa-regular fa-eye"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- table end -->
+                    <!-- pagination start  -->
+                    <div class="list-footer d-between bgnc-10 br-brl-sm px-30 py-3">
+                        <span class="para-1b fs-base d-block">Showing 1 to 10 of 14 entries</span>
+                        <ul class="pagination-item">
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0)" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="fa-solid fa-angles-left"></i></span>
+                                </a>
+                            </li>
+                            <li class="page-item "><a class="page-link" href="javascript:void(0)">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="javascript:void(0)">2</a></li>
+                            <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0)" aria-label="Next">
+                                    <span aria-hidden="true"><i class="fa-solid fa-angles-right"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- pagination end  -->
+                </div>
+
+            </div>
+            <!-- main content end -->
+
+            <!-- footer start  -->
+            <footer>
+                <div class="container-fluid">
+                    <span class="para-1b fs-base text-center text-sm-start d-block ">Copyright © <span
+                            class="currentYear"></span> Speech Care. All rights reserved.</span>
+                </div>
+            </footer>
+            <!-- footer end  -->
+        </div>
+        <!-- content section end   -->
+    </main>
+    <!-- main content & top header end  -->
+
+
+    <!-- jquery -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/plugin/jquery-3.7.0.min.js"></script>
+    <!-- bootstrap js  -->
+    <script src="assets/js/plugin/bootstrap.min.js"></script>
+    <!-- nice select  -->
+    <script src="assets/js/plugin/jquery.nice-select.min.js"></script>
+    <!-- chart js  -->
+    <script src="assets/js/plugin/cdn.jsdelivr.net_npm_chart.js"></script>
+    <!-- plugin customize js  -->
+    <script src="assets/js/pluginCustomization.js"></script>
+
+    <!-- main js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from pixner.net/Speech Care-dashboard/Speech Care-dashboard/admin-patient-case-studies.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Dec 2023 10:16:30 GMT -->
+</html>

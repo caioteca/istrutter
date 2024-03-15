@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from pixner.net/Speech Care-dashboard/Speech Care-dashboard/admin-doctor-appointment-info.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Dec 2023 10:16:45 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <title>Admin Doctor Appointment Info | Speech Care </title>
+    <!-- bootstrap stylesheet -->
+    <link rel="stylesheet" href="assets/css/customizeBootstrap.css">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="body-bg">
+
+    <!-- main body  -->
+
+    <!-- preloader  -->
+    <div id='preloader'>
+    <svg id='loader-1'  height='210' width='550' xmlns='http://www.w3.org/2000/svg'
+            xmlns:xlink='http://www.w3.org/1999/xlink'>
+        <path id='loader-2' stroke='#00d0f1' fill='none' stroke-width='2' stroke-linejoin='round'
+            d='M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210' />
+    </svg>
+    </div>
+
+    <!-- sidebar start -->
+    <div class="sidebar">
+        <div class="sidebar-wrapper">
+            <div>
+                <i class="fa-solid fa-x hide-menubar" id="hide-menubar"></i>
+                <div class="p-xl-20 p-10 ">
+                    <div class="logo pb-20">
+                        <a class="d-flex align-items-center" href="index.html">
+                            
+                            <img class="ms-10 show-item lp-2" src="assets/img/logo-body.png" alt="logo" width="160">
+                        </a>
+                    </div>
+                    <div class="py-20 bb-2 bt-1">
+                        <a class="sidebar-user" href="javascript:void(0)">
+                            <img class="rounded-circle" src="assets/img/admin.png" alt="admin">
+                            <span class="para-1b show-item ms-10">Super Admin</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="side-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <i class="fa-solid fa-gauge-high"></i>
+                                <span class="show-item">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admin-device.html">
+                                <i class="fa-solid fa-laptop-medical"></i>
+                                <span class="show-item">Device</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admin-doctor.html">
+                                <i class="fa-solid fa-user-doctor"></i>
+                                <span class="show-item"> Doctor</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admin-patient-list.html">
+                                <i class="fa-solid fa-bed-pulse"></i>
+                                <span class="show-item"> Patient </span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="admin-doctor-schedule.html">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span class="show-item"> Doctor Schedule</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admin-patient-appointment.html">
+                                <i class="fa-regular fa-calendar-check"></i>
+                                <span class="show-item"> Patient Appointment</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admin-patient-case-studies.html"><i class="fa-solid fa-paste"></i>
+                                <span class="show-item"> Patient Case Studies</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="admin-patient-prescription.html">
+                                <i class="fa-solid fa-file-prescription"></i>
+                                <span class="show-item">Prescription</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="log-out">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <span class="show-item"> Log Out </span>
+            </button>
+        </div>
+    </div>
+    <!-- sidebar end  -->
+
+    <!-- main content & top header start  -->
+    <main class="content-wrapper">
+
+        <!-- header section start  -->
+        <header>
+            <div class="d-flex align-items-center gap-xl-30 gap-3">
+
+                <button class="toggle-menu btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+
+                <a href="https://health-ease-gamma.vercel.app/" target="_blank">
+                    <i class="fa-solid fa-globe me-10"></i>
+                    <span class="fs-base header-item-hide">Go to website</span>
+                </a>
+            </div>
+
+            <div class="d-flex align-items-center gap-sm-4 gap-3">
+
+                <a href="chat-with-us.html">
+                    <i class="fa-regular fa-comments me-2"></i>
+                    <span class="fs-base header-item-hide">Chat with us</span>
+                </a>
+
+                <div class="health-ease">
+                    <i class="fa-regular fa-hospital me-xl-10 he-icon"></i>
+                    <select>
+                        <option value="0">Speech Care</option>
+                        <option value="1">item 1</option>
+                        <option value="2">item 2</option>
+                        <option value="3">item 3</option>
+                    </select>
+                </div>
+
+
+                <div class="account">
+                    <img class="me-xl-10" src="assets/img/patient.png" alt="patient">
+                    <select>
+                        <option value="0">Mr Patient</option>
+                        <option value="1">item 1</option>
+                        <option value="2">item 2</option>
+                        <option value="3">item 3</option>
+                    </select>
+                </div>
+
+                <div class="language ">
+                    <img class="lang-flag header-item-hide" src="assets/img/flag.png" alt="flag">
+
+                    <select class="lang">
+                        <option value="en">EN</option>
+                        <option value="bd">BD</option>
+                        <option value="in">IN</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        <!-- header section end  -->
+
+        <!-- content section start   -->
+        <div class="main-content">
+            <!-- main content start -->
+            <div>
+                <div class="page-title justify-content-end">
+                    <!-- <h3>Doctor Appointment Info</h3> -->
+                    <ul class="d-flex align-items-center column-gap-20 flex-wrap">
+                        <li class="bc-item"><a class="para-1b" href="index.html">Dashboard</a></li>
+                        <li class="bc-item"><a class="para-1b" href="admin-doctor-schedule.html">Doctor Schedule</a>
+                        </li>
+                        <li class="bc-item">Add Doctor Schedule</li>
+                    </ul>
+                </div>
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-4 col-md-6 mx-auto">
+                        <div class="p-30 br-sm bgnc-10 bxs-1 text-center">
+                            <div class="thum-pic mb-sm-30 mb-20">
+                                <img class="w-100 rounded-circle" src="assets/img/doctor-2.png" alt="doctor">
+                            </div>
+                            <span class="heading-four mb-10">Mr Doctor</span>
+                            <span class="para-1b d-block mb-20">Outpatient Department</span>
+                            <ul class="social-icon">
+                                <li><a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fa-brands fa-dribbble"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="px-lg-30 px-3 py-20 br-sm bgnc-10 bxs-1">
+                            <span class="heading-four text-center tpc-2 mb-20">Doctor Appointment Info</span>
+                            <div class="bt-2 pt-20 doc-info-body">
+
+                                <div class="doc-info-item">
+                                    <ul class="d-grid gap-10">
+                                        <li class="d-sm-flex">
+                                            <span class="d-flex">
+                                                <span class="fw-bold doc-info-title">Name</span>
+                                                <span class="fw-bold d-inline-block me-10"> : </span>
+                                            </span>
+                                            <span class="fs-base">Mr Doctor</span>
+                                        </li>
+                                        <li class="d-sm-flex">
+                                            <span class="d-flex">
+                                                <span class="fw-bold doc-info-title">Address</span>
+                                                <span class="fw-bold d-inline-block me-10"> : </span>
+                                            </span>
+                                            <span class="fs-base">Westheimer Rd. Santa Ana, Illinois 85486 </span>
+                                        </li>
+                                        <li class="d-sm-flex">
+                                            <span class="d-flex">
+                                                <span class="fw-bold doc-info-title">Email</span>
+                                                <span class="fw-bold d-inline-block me-10"> : </span>
+                                            </span>
+                                            <span class="fs-base"> <a href="https://pixner.net/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2641434954414f47085f4953484166435e474b564a430845494b">[email&#160;protected]</a> </span>
+                                        </li>
+                                        <li class="d-sm-flex">
+                                            <span class="d-flex">
+                                                <span class="fw-bold doc-info-title">Phone</span>
+                                                <span class="fw-bold d-inline-block me-10"> : </span>
+                                            </span>
+                                            <span class="fs-base"> (603) 555-0123 , (704) 555-0127 </span>
+                                        </li>
+                                        <li class="d-sm-flex">
+                                            <span class="d-flex">
+                                                <span class="fw-bold doc-info-title">Gender</span>
+                                                <span class="fw-bold d-inline-block me-10"> : </span>
+                                            </span>
+                                            <span class="fs-base"> Female </span>
+                                        </li>
+                                        <li class="d-sm-flex">
+                                            <span class="d-flex">
+                                                <span class="fw-bold doc-info-title">Serial Type</span>
+                                                <span class="fw-bold d-inline-block me-10"> : </span>
+                                            </span>
+                                            <span class="fs-base">Sequential</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="doc-info-item">
+                                    <ul class="d-grid gap-10">
+                                        <li class="d-sm-flex">
+                                            <span class="d-flex">
+                                                <span class="fw-bold doc-info-title">Start Time</span>
+                                                <span class="fw-bold d-inline-block me-10"> : </span>
+                                            </span>
+                                            <span class="fs-base">00:00:00</span>
+                                        </li>
+                                        <li class="d-sm-flex">
+                                            <span class="d-flex">
+                                                <span class="fw-bold doc-info-title">Department</span>
+                                                <span class="fw-bold d-inline-block me-10"> : </span>
+                                            </span>
+                                            <span class="fs-base">Outpatient department (OPD)</span>
+                                        </li>
+                                        <li class="d-sm-flex">
+                                            <span class="d-flex">
+                                                <span class="fw-bold ">Appointment Duration</span>
+                                                <span class="fw-bold d-inline-block me-10"> : </span>
+                                            </span>
+                                            <span class="fs-base">30 minutes</span>
+                                        </li>
+                                        <li class="d-sm-flex">
+                                            <span class="d-flex">
+                                                <span class="fw-bold doc-info-title">Weekly</span>
+                                                <span class="fw-bold d-inline-block me-10"> : </span>
+                                            </span>
+                                            <span class="fs-base">Friday</span>
+                                        </li>
+                                        <li class="d-sm-flex">
+                                            <span class="d-flex">
+                                                <span class="fw-bold doc-info-title">End Time</span>
+                                                <span class="fw-bold d-inline-block me-10"> : </span>
+                                            </span>
+                                            <span class="fs-base">23:59:00</span>
+                                        </li>
+                                        <li class="d-sm-flex">
+                                            <span class="d-flex">
+                                                <span class="fw-bold doc-info-title">Status</span>
+                                                <span class="fw-bold d-inline-block me-10"> : </span>
+                                            </span>
+                                            <span class="fs-base tsc-1">Active</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main content end -->
+
+            <!-- footer start  -->
+            <footer>
+                <div class="container-fluid">
+                    <span class="para-1b fs-base text-center text-sm-start d-block ">Copyright © <span
+                            class="currentYear"></span> Speech Care. All
+                        rights reserved.</span>
+                </div>
+            </footer>
+            <!-- footer end  -->
+        </div>
+        <!-- content section end   -->
+    </main>
+    <!-- main content & top header end  -->
+
+
+    <!-- jquery -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/plugin/jquery-3.7.0.min.js"></script>
+    <!-- bootstrap js  -->
+    <script src="assets/js/plugin/bootstrap.min.js"></script>
+    <!-- nice select  -->
+    <script src="assets/js/plugin/jquery.nice-select.min.js"></script>
+    <!-- chart js  -->
+    <script src="assets/js/plugin/cdn.jsdelivr.net_npm_chart.js"></script>
+    <!-- plugin customize js  -->
+    <script src="assets/js/pluginCustomization.js"></script>
+
+    <!-- main js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from pixner.net/Speech Care-dashboard/Speech Care-dashboard/admin-doctor-appointment-info.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Dec 2023 10:16:46 GMT -->
+</html>
